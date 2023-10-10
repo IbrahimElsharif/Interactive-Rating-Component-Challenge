@@ -2,8 +2,11 @@
 
 </script>
 
-<main>
-    <h1 class="text-violet-400 text-2xl">Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main class="grid h-screen place-items-center">
+    <!-- Container -->
+    <div class="container flex flex-col bg-gradient-to-t from-veryDarkBlue to-darkBlue mx-auto rounded-3xl w-88 h-1/2">
+        <!-- Star Icon -->
+        <img src="" alt="">
+    </div>
 
 </main>
