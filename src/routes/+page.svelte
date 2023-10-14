@@ -20,7 +20,9 @@
         </p>
         <!-- Input Select -->
         <RatingSelect />
-        
+        <!-- Submit Button -->
+        <button class="bg-orange-500 mx-6 h-12 rounded-3xl  text-white hover:bg-white hover:text-orange-400">SUBMIT</button>
+
     </div>
 
 </main>

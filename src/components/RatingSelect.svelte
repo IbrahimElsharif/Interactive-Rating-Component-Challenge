@@ -43,6 +43,7 @@
 
     .rating li label {
         position: absolute;
+        color: hsl(216, 12%, 54%);
         top: 50%;
         left: 50%;
         width: 50px;
@@ -55,6 +56,10 @@
 
     .rating li:hover {
         background: orange;
+        color: #fff;
+    }
+
+    .rating li label:hover {
         color: #fff;
     }
 
