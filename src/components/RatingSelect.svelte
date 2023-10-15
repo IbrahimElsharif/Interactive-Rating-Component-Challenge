@@ -1,28 +1,37 @@
 <script>
-    let selected = 5;
+    import {createEventDispatcher} from "svelte";
+    export let selected; 
 
+    const dispatch = createEventDispatcher();
+
+    const onChange = (e) => {
+        selected = e.currentTarget.value;
+        dispatch("rating-select", selected);
+    }
+
+    console.log(selected)
 </script>
 
 <main>
     <ul class="rating container flex px-6 items-center justify-between">
         <li>
-            <input type="radio" id="num1" name="rating" value="1" checked={selected===1}>
+            <input type="radio" id="num1" name="rating" value="1" on:change={onChange} checked={selected===1}>
             <label for="num1">1</label>
         </li>
         <li>
-            <input type="radio" id="num2" name="rating" value="2" checked={selected===2}>
+            <input type="radio" id="num2" name="rating" value="2" on:change={onChange} checked={selected===2}>
             <label for="num2">2</label>
         </li>
         <li>
-            <input type="radio" id="num3" name="rating" value="3" checked={selected===3}>
+            <input type="radio" id="num3" name="rating" value="3" on:change={onChange} checked={selected===3}>
             <label for="num3">3</label>
         </li>
         <li>
-            <input type="radio" id="num4" name="rating" value="4" checked={selected===4}>
+            <input type="radio" id="num4" name="rating" value="4" on:change={onChange} checked={selected===4}>
             <label for="num4">4</label>
         </li>
         <li>
-            <input type="radio" id="num5" name="rating" value="5" checked={selected===5}>
+            <input type="radio" id="num5" name="rating" value="5" on:change={onChange} checked={selected===5}>
             <label for="num5">5</label>
         </li>
     </ul>
@@ -55,7 +64,7 @@
     }
 
     .rating li:hover {
-        background: orange;
+        background: #f97316;
         color: #fff;
     }
 

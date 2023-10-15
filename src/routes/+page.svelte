@@ -1,6 +1,10 @@
 <script>
-  import RatingSelect from "../components/RatingSelect.svelte";
+    import RatingSelect from "../components/RatingSelect.svelte";
 
+    let selected = 5;
+    let rating = 5;
+    const handleSelect = e => rating = e.detail;
+    
 
 </script>
 
@@ -19,7 +23,7 @@
             All feedback is appreciated to help us improve our offering!
         </p>
         <!-- Input Select -->
-        <RatingSelect />
+        <RatingSelect on:rating-select={handleSelect} {selected} />
         <!-- Submit Button -->
         <button class="bg-orange-500 mx-6 h-12 rounded-3xl  text-white hover:bg-white hover:text-orange-400">SUBMIT</button>
 
