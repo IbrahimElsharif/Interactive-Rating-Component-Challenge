@@ -13,7 +13,7 @@
     <div class="container flex flex-col space-y-5 bg-gradient-to-t from-veryDarkBlue to-darkBlue mx-auto rounded-3xl w-88 h-96">
         <!-- Star Icon -->
         <div class="bg-darkBlue mt-6 ml-6 rounded-full w-10 h-10">
-            <img src="..\images\icon-star.svg" alt="" class="w-4 mt-3 mx-auto">
+            <img src=".\images\icon-star.svg" alt="" class="w-4 mt-3 mx-auto">
         </div>
         <!-- Header -->
         <h1 class="text-white ml-6 text-2xl font-bold">How did we do?</h1>
