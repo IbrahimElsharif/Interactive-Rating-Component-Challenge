@@ -60,6 +60,7 @@
         width: 50px;
         height: 50px;
         padding: 10px;
+        padding-top: 13px;
         border-radius: 50%;
         transform: translate(-50%, -50%);
         cursor: pointer;

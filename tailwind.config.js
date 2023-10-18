@@ -15,6 +15,9 @@ export default {
       },
       width: {
         "88": "22rem"
+      },
+      fontFamily: {
+        Overpass: "'Overpass', sans-serif;"
       }
     },
   },

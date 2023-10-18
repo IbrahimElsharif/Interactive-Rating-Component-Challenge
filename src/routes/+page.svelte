@@ -19,7 +19,7 @@
 
 <ThankYouState {rating} />
 
-<main class="page grid h-screen place-items-center">
+<main class="page grid h-screen place-items-center font-Overpass">
     <!-- Container -->
     <div class="flex flex-col space-y-5 bg-gradient-to-t from-veryDarkBlue to-darkBlue mx-auto rounded-3xl w-88 h-96">
         

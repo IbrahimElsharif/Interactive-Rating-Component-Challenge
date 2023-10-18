@@ -12,13 +12,13 @@
     }
 </script>
 
-<main class="thank-you-state hidden h-screen place-items-center">
+<main class="thank-you-state hidden h-screen place-items-center font-Overpass">
     <!-- Container -->
     <div on:click|preventDefault={handleExit} class="flex flex-col space-y-5 bg-gradient-to-t from-veryDarkBlue to-darkBlue mx-auto rounded-3xl w-88 h-96">
         <!-- Image -->
         <img src=".\images\illustration-thank-you.svg" alt="" class="mx-auto mt-10">
         <!-- Rate -->
-        <div class="mx-auto text-orange-500 bg-darkBlue py-1 px-3 rounded-3xl">
+        <div class="mx-auto text-orange-500 bg-darkBlue py-1.5 px-3 rounded-3xl">
             You selected {rating} out of 5
         </div>
         <!-- Header -->
