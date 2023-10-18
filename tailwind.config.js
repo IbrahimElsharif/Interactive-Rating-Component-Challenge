@@ -2,6 +2,9 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    screens: {
+      sm: {"max": "375px"}
+    },
     extend: {
       colors: {
         lightGray: "hsl(217, 12%, 63%)",

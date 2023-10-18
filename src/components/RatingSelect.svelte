@@ -1,6 +1,7 @@
 <script>
     import {createEventDispatcher} from "svelte";
-    export let selected; 
+
+    let selected = 5;
 
     const dispatch = createEventDispatcher();
 
@@ -9,10 +10,11 @@
         dispatch("rating-select", selected);
     }
 
-    console.log(selected)
+    $: console.log(selected)
 </script>
 
 <main>
+
     <ul class="rating container flex px-6 items-center justify-between">
         <li>
             <input type="radio" id="num1" name="rating" value="1" on:change={onChange} checked={selected===1}>
